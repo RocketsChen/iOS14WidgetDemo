@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF5058362518374600EC1804 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5058352518374600EC1804 /* AppDelegate.m */; };
+		EF5058392518374600EC1804 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5058382518374600EC1804 /* SceneDelegate.m */; };
+		EF50583C2518374600EC1804 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF50583B2518374600EC1804 /* ViewController.m */; };
+		EF50583F2518374600EC1804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF50583D2518374600EC1804 /* Main.storyboard */; };
+		EF5058412518374800EC1804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5058402518374800EC1804 /* Assets.xcassets */; };
+		EF5058442518374800EC1804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5058422518374800EC1804 /* LaunchScreen.storyboard */; };
+		EF5058472518374800EC1804 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5058462518374800EC1804 /* main.m */; };
+		EF50587325183B2B00EC1804 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5058542518379D00EC1804 /* WidgetKit.framework */; };
+		EF50587425183B2B00EC1804 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5058562518379D00EC1804 /* SwiftUI.framework */; };
+		EF50587725183B2B00EC1804 /* AdopterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50587625183B2B00EC1804 /* AdopterWidget.swift */; };
+		EF50587925183B2B00EC1804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF50587825183B2B00EC1804 /* Assets.xcassets */; };
+		EF50587D25183B2C00EC1804 /* AdopterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF50587225183B2B00EC1804 /* AdopterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF5058A32519E6EC00EC1804 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5058542518379D00EC1804 /* WidgetKit.framework */; };
+		EF5058A42519E6EC00EC1804 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5058562518379D00EC1804 /* SwiftUI.framework */; };
+		EF5058A72519E6EC00EC1804 /* ManualWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5058A62519E6EC00EC1804 /* ManualWidget.swift */; };
+		EF5058AA2519E6ED00EC1804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5058A92519E6ED00EC1804 /* Assets.xcassets */; };
+		EF5058AC2519E6ED00EC1804 /* ManualWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EF5058A82519E6EC00EC1804 /* ManualWidget.intentdefinition */; };
+		EF5058AD2519E6ED00EC1804 /* ManualWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EF5058A82519E6EC00EC1804 /* ManualWidget.intentdefinition */; };
+		EF5058B02519E6ED00EC1804 /* ManualWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF5058A22519E6EC00EC1804 /* ManualWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF50587B25183B2C00EC1804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5058292518374600EC1804 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF50587125183B2B00EC1804;
+			remoteInfo = AdopterWidgetExtension;
+		};
+		EF5058AE2519E6ED00EC1804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5058292518374600EC1804 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5058A12519E6EC00EC1804;
+			remoteInfo = ManualWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF5058672518379E00EC1804 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF5058B02519E6ED00EC1804 /* ManualWidgetExtension.appex in Embed App Extensions */,
+				EF50587D25183B2C00EC1804 /* AdopterWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF5058312518374600EC1804 /* WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5058342518374600EC1804 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF5058352518374600EC1804 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF5058372518374600EC1804 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EF5058382518374600EC1804 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EF50583A2518374600EC1804 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF50583B2518374600EC1804 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF50583E2518374600EC1804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF5058402518374800EC1804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5058432518374800EC1804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF5058452518374800EC1804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5058462518374800EC1804 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF5058542518379D00EC1804 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EF5058562518379D00EC1804 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EF50587225183B2B00EC1804 /* AdopterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AdopterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF50587625183B2B00EC1804 /* AdopterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdopterWidget.swift; sourceTree = "<group>"; };
+		EF50587825183B2B00EC1804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF50587A25183B2C00EC1804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5058A22519E6EC00EC1804 /* ManualWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ManualWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5058A62519E6EC00EC1804 /* ManualWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualWidget.swift; sourceTree = "<group>"; };
+		EF5058A82519E6EC00EC1804 /* ManualWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ManualWidget.intentdefinition; sourceTree = "<group>"; };
+		EF5058A92519E6ED00EC1804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5058AB2519E6ED00EC1804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF50582E2518374600EC1804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF50586F25183B2B00EC1804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF50587425183B2B00EC1804 /* SwiftUI.framework in Frameworks */,
+				EF50587325183B2B00EC1804 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF50589F2519E6EC00EC1804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5058A42519E6EC00EC1804 /* SwiftUI.framework in Frameworks */,
+				EF5058A32519E6EC00EC1804 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF5058282518374600EC1804 = {
+			isa = PBXGroup;
+			children = (
+				EF5058332518374600EC1804 /* WidgetDemo */,
+				EF50587525183B2B00EC1804 /* AdopterWidget */,
+				EF5058A52519E6EC00EC1804 /* ManualWidget */,
+				EF5058532518379D00EC1804 /* Frameworks */,
+				EF5058322518374600EC1804 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5058322518374600EC1804 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5058312518374600EC1804 /* WidgetDemo.app */,
+				EF50587225183B2B00EC1804 /* AdopterWidgetExtension.appex */,
+				EF5058A22519E6EC00EC1804 /* ManualWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5058332518374600EC1804 /* WidgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EF5058342518374600EC1804 /* AppDelegate.h */,
+				EF5058352518374600EC1804 /* AppDelegate.m */,
+				EF5058372518374600EC1804 /* SceneDelegate.h */,
+				EF5058382518374600EC1804 /* SceneDelegate.m */,
+				EF50583A2518374600EC1804 /* ViewController.h */,
+				EF50583B2518374600EC1804 /* ViewController.m */,
+				EF50583D2518374600EC1804 /* Main.storyboard */,
+				EF5058402518374800EC1804 /* Assets.xcassets */,
+				EF5058422518374800EC1804 /* LaunchScreen.storyboard */,
+				EF5058452518374800EC1804 /* Info.plist */,
+				EF5058462518374800EC1804 /* main.m */,
+			);
+			path = WidgetDemo;
+			sourceTree = "<group>";
+		};
+		EF5058532518379D00EC1804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5058542518379D00EC1804 /* WidgetKit.framework */,
+				EF5058562518379D00EC1804 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF50587525183B2B00EC1804 /* AdopterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EF50587625183B2B00EC1804 /* AdopterWidget.swift */,
+				EF50587825183B2B00EC1804 /* Assets.xcassets */,
+				EF50587A25183B2C00EC1804 /* Info.plist */,
+			);
+			path = AdopterWidget;
+			sourceTree = "<group>";
+		};
+		EF5058A52519E6EC00EC1804 /* ManualWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EF5058A62519E6EC00EC1804 /* ManualWidget.swift */,
+				EF5058A82519E6EC00EC1804 /* ManualWidget.intentdefinition */,
+				EF5058A92519E6ED00EC1804 /* Assets.xcassets */,
+				EF5058AB2519E6ED00EC1804 /* Info.plist */,
+			);
+			path = ManualWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5058302518374600EC1804 /* WidgetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF50584A2518374800EC1804 /* Build configuration list for PBXNativeTarget "WidgetDemo" */;
+			buildPhases = (
+				EF50582D2518374600EC1804 /* Sources */,
+				EF50582E2518374600EC1804 /* Frameworks */,
+				EF50582F2518374600EC1804 /* Resources */,
+				EF5058672518379E00EC1804 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF50587C25183B2C00EC1804 /* PBXTargetDependency */,
+				EF5058AF2519E6ED00EC1804 /* PBXTargetDependency */,
+			);
+			name = WidgetDemo;
+			productName = WidgetDemo;
+			productReference = EF5058312518374600EC1804 /* WidgetDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF50587125183B2B00EC1804 /* AdopterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF50587E25183B2C00EC1804 /* Build configuration list for PBXNativeTarget "AdopterWidgetExtension" */;
+			buildPhases = (
+				EF50586E25183B2B00EC1804 /* Sources */,
+				EF50586F25183B2B00EC1804 /* Frameworks */,
+				EF50587025183B2B00EC1804 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdopterWidgetExtension;
+			productName = AdopterWidgetExtension;
+			productReference = EF50587225183B2B00EC1804 /* AdopterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EF5058A12519E6EC00EC1804 /* ManualWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5058B32519E6ED00EC1804 /* Build configuration list for PBXNativeTarget "ManualWidgetExtension" */;
+			buildPhases = (
+				EF50589E2519E6EC00EC1804 /* Sources */,
+				EF50589F2519E6EC00EC1804 /* Frameworks */,
+				EF5058A02519E6EC00EC1804 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManualWidgetExtension;
+			productName = ManualWidgetExtension;
+			productReference = EF5058A22519E6EC00EC1804 /* ManualWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF5058292518374600EC1804 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					EF5058302518374600EC1804 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					EF50587125183B2B00EC1804 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					EF5058A12519E6EC00EC1804 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = EF50582C2518374600EC1804 /* Build configuration list for PBXProject "WidgetDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF5058282518374600EC1804;
+			productRefGroup = EF5058322518374600EC1804 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5058302518374600EC1804 /* WidgetDemo */,
+				EF50587125183B2B00EC1804 /* AdopterWidgetExtension */,
+				EF5058A12519E6EC00EC1804 /* ManualWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF50582F2518374600EC1804 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5058442518374800EC1804 /* LaunchScreen.storyboard in Resources */,
+				EF5058412518374800EC1804 /* Assets.xcassets in Resources */,
+				EF50583F2518374600EC1804 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF50587025183B2B00EC1804 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF50587925183B2B00EC1804 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5058A02519E6EC00EC1804 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5058AA2519E6ED00EC1804 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF50582D2518374600EC1804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF50583C2518374600EC1804 /* ViewController.m in Sources */,
+				EF5058362518374600EC1804 /* AppDelegate.m in Sources */,
+				EF5058472518374800EC1804 /* main.m in Sources */,
+				EF5058AD2519E6ED00EC1804 /* ManualWidget.intentdefinition in Sources */,
+				EF5058392518374600EC1804 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF50586E25183B2B00EC1804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF50587725183B2B00EC1804 /* AdopterWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF50589E2519E6EC00EC1804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5058AC2519E6ED00EC1804 /* ManualWidget.intentdefinition in Sources */,
+				EF5058A72519E6EC00EC1804 /* ManualWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF50587C25183B2C00EC1804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF50587125183B2B00EC1804 /* AdopterWidgetExtension */;
+			targetProxy = EF50587B25183B2C00EC1804 /* PBXContainerItemProxy */;
+		};
+		EF5058AF2519E6ED00EC1804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5058A12519E6EC00EC1804 /* ManualWidgetExtension */;
+			targetProxy = EF5058AE2519E6ED00EC1804 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF50583D2518374600EC1804 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF50583E2518374600EC1804 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF5058422518374800EC1804 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5058432518374800EC1804 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF5058482518374800EC1804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF5058492518374800EC1804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF50584B2518374800EC1804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF50584C2518374800EC1804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF50587F25183B2C00EC1804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = AdopterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo.AdopterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF50588025183B2C00EC1804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = AdopterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo.AdopterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF5058B12519E6ED00EC1804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = ManualWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo.ManualWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5058B22519E6ED00EC1804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3QZXY69QQ;
+				INFOPLIST_FILE = ManualWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketsChen.WidgetDemo.ManualWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF50582C2518374600EC1804 /* Build configuration list for PBXProject "WidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5058482518374800EC1804 /* Debug */,
+				EF5058492518374800EC1804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF50584A2518374800EC1804 /* Build configuration list for PBXNativeTarget "WidgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF50584B2518374800EC1804 /* Debug */,
+				EF50584C2518374800EC1804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF50587E25183B2C00EC1804 /* Build configuration list for PBXNativeTarget "AdopterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF50587F25183B2C00EC1804 /* Debug */,
+				EF50588025183B2C00EC1804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5058B32519E6ED00EC1804 /* Build configuration list for PBXNativeTarget "ManualWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5058B12519E6ED00EC1804 /* Debug */,
+				EF5058B22519E6ED00EC1804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF5058292518374600EC1804 /* Project object */;
+}
