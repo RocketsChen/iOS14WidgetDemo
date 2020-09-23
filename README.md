@@ -1,6 +1,4 @@
-# iOS14WidgetDemo
-
-
+# iOS14 Widget体验
 
 ### 前言
 
@@ -8,7 +6,7 @@ iOS14发布已经有一段时间了，更新完之后最让我好奇的就是这
 
 看完这篇博客，你可以大概的了解一些关于iOS14Widget信息，和尝试编写一个简单的Widget小组件。
 
-Widget代码演示部分可以直接跳至第三部分：iOS14 Widget的代码实现。
+Widget代码演示部分可以直接跳至第三部分。
 
 ### 1：与iOS13 Widget区别
 
@@ -167,7 +165,7 @@ if family == .systemMedium { // 中
 
 ```
 - (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
-    
+    /// 根据不同的URL回调做出响应
     NSLog(@"%@",URLContexts);
 }
 ```
@@ -294,11 +292,11 @@ struct SwiftWidgetsBundle: WidgetBundle {
 
 更新完iOS14 不管是在用户的使用上，还是Widget组件的开发的过程中体验都更顺滑了。除了要切换成SwiftUI的开发时间成本来说，把项目的组件完成最新形式还是很吸引人的，开发上也很舒适。
 
+玩具感很强，感觉还有很多要更新和补充的东西。
 
 新的Widget组件还支持用户用户配置（Include Configuration Intent）这一点demo没有演示到，后续有需要我会在更新下。
 
 最后文档中如果有理解有误的地方，欢迎反馈，我将及时更新和修正。
-
 
 
 
