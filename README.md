@@ -163,6 +163,15 @@ if family == .systemMedium { // 中
 
 注！：systemSmall（小组件）只支持widgetURL，而systemMedium（中组件）和 systemLarge（大组件）则都支持。Link：更希望的是不同元素的点击响应。
 
+* 在主项目的SceneDelegate代理方法中接收回调
+
+```
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+    
+    NSLog(@"%@",URLContexts);
+}
+```
+
 #### 4：部分代码和方法注释
 
 #####1：默认模板代码注释
